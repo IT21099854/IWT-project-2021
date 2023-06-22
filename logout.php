@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    unset($_SESSION["id"]);
+    unset($_SESSION["name"]);
+    unset($_SESSION["email"]);
+    unset($_SESSION["payment_option"]);
+    unset($_SESSION["image"]);
+    header("Location:login.php");
+?>
